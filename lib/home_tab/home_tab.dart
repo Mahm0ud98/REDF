@@ -124,7 +124,7 @@ class _HomeTabState extends State<HomeTab> {
                             Container(
                               margin: EdgeInsets.only(right: 10),
                               child: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
+                               // mainAxisAlignment: MainAxisAlignment.start,
                                 children: const [
 
                                   DefaultTextStyle(

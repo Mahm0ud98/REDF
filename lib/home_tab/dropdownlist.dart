@@ -10,9 +10,9 @@ class DropDownList extends StatefulWidget {
 }
 class _DropDownListState extends State<DropDownList> {
 
-String dropdownvalue = 'Sybsidized loan';
+String dropdownvalue = '#xxxxx - Sybsidized loan';
 var items = [
-  'Subsidized loan',
+  '#xxxxx - Sybsidized loan',
   'payments',
   'Deposits',
 ];
@@ -47,7 +47,7 @@ var items = [
                 });
               },
               hint: Text(
-                "Subsidized loan",
+                "#xxxxx - Sybsidized loan",
                 style: TextStyle(fontSize: 20, color: Colors.white, )
               ),
             ),

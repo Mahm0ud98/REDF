@@ -194,7 +194,7 @@ class _ProfileTabState extends State<ProfileTab> {
                                     margin: const EdgeInsets.only( left: 10),
                                     child: ElevatedButton(
                                       style: ElevatedButton.styleFrom(
-                                          padding: EdgeInsets.zero,
+                                        padding: EdgeInsets.zero,
                                           shape: RoundedRectangleBorder(
                                               borderRadius: BorderRadius.circular(20))
                                       ),

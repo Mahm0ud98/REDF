@@ -56,31 +56,93 @@ class _HomeTabState extends State<HomeTab> {
                           ],
                         ),
                         Container(
-                         // margin: EdgeInsets.only(right: 10),
-                          //margin: EdgeInsets.only(left: 80),
                           child: Image.asset('assets/home/notifications.png'),
                         ),
                       ],
                     ),
                   ),
                   DropDownList(),
-                  // Container(
-                  //   color: AppColors.mainColorLight,
-                  //   margin: EdgeInsets.only(top: 10, right: 10),
-                  //   child: ElevatedButton(
-                  //    // style: ButtonStyle(backgroundColor: ),
-                  //       onPressed: (){},
-                  //       child: Row(
-                  //         children: [
-                  //           Column(
-                  //             children: [
-                  //               Text('Next installment: XXXXXX KSA')
-                  //             ],
-                  //           )
-                  //         ],
-                  //       )
-                  //   ),
-                  // ),
+                  Container(
+                    height: 66,
+                    margin: EdgeInsets.only(top: 15,right: 10, left: 10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15.0),
+                      color: AppColors.mainColorLight,
+                    ),
+                    child:
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 18,right: 18,top: 10,bottom: 10),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: const [
+                                      DefaultTextStyle(
+                                        style: TextStyle(fontSize: 12),
+                                        child: Text('Next installment:'),
+                                      ),
+                                      SizedBox(
+                                        width: 2,
+                                      ),
+                                    DefaultTextStyle(
+                                    style: TextStyle(fontSize: 12),
+                                   child: Text('xxxxxx',style: TextStyle(fontWeight: FontWeight.bold),),
+                                     ),
+                                      SizedBox(
+                                        width: 5,
+                                      ),
+                                      DefaultTextStyle(
+                                        style: TextStyle(fontSize: 12),
+                                        child: Text('KSA'),
+                                      ),
+                                      ]
+                                  ),
+                                  SizedBox(
+                                    height: 5,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: const [
+                                      Icon(Icons.calendar_today,color: Colors.white,),
+                                      SizedBox(
+                                        width: 10,
+                                      ),
+                                      DefaultTextStyle(
+                                        style: TextStyle(fontSize: 18),
+                                        child: Text('5/24/2022'),
+                                      )
+                                    ],
+
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(right: 10),
+                              child: Row(
+                               // mainAxisAlignment: MainAxisAlignment.start,
+                                children: const [
+
+                                  DefaultTextStyle(
+                                    style: TextStyle(fontSize: 16),
+                                    child: Text('Pay Now'),
+                                  ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                                  Icon(Icons.arrow_forward_ios,color: Colors.white,),
+                                ],
+
+                              ),
+                            )
+                          ],
+                        ),
+
+                  ),
                 ],
               ),
             ),
